@@ -6,7 +6,7 @@ function RegistroEstudiante () {
                 <div class="col-md-8">
                 
                 <button type="button" class="btn btn-block btn-primary mb-4" data-toggle="modal" data-target="#modal-form">
-                Registrar Estudiante</button>
+                Registrar Año Lectivo</button>
                 
                 <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
