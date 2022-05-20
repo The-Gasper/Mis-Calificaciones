@@ -1,14 +1,14 @@
 import React from 'react';
 
-function RegistroEstudiante () {
-    return(
+function FormsTipoActividad() {
+    return (
         <React.Fragment>
-                <div class="col-md-8">
+        <div class="col-md-4">
                 
-                <button type="button" class="btn btn-block btn-primary mb-4" data-toggle="modal" data-target="#modal-form">
-                Registrar Año Lectivo</button>
+                <button type="button" class="btn btn-block btn-primary mb-4 text-green" data-toggle="modal" data-target="#modal-form-Tipo-Actividad">
+                Agregar Actividad</button>
                 
-                <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+                <div class="modal fade" id="modal-form-Tipo-Actividad" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-body p-0">
@@ -17,7 +17,7 @@ function RegistroEstudiante () {
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <div class="card-header text-center pb-0">
-                                        <h2 class="h4">Año Lectivo</h2>
+                                        <h2 class="h4">Tipo de Actividades</h2>
                                         <span>Campos obligatorios * </span>   
                                     </div>
                                     <div class="card-body">
@@ -28,13 +28,10 @@ function RegistroEstudiante () {
                                                     <input type="number" id="disabledTextInput" class="form-control" placeholder="ID"/>
                                                 </div>
                                             </fieldset>
-                                            <div class="form-group">
-                                                <label class="h6" for="exampleInputDate1">Año Lectivo</label>
-                                                <div class="input-group mb-4">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
-                                                    </div>
-                                                    <input class="form-control datepicker" id="exampleInputDate1" placeholder="Select date" type="text" aria-label="Date with icon left"/>
+                                            <div class="form-group">                                                
+                                                <legend class="h6">Tipo de Actividad *</legend>
+                                                <div class="form-group">                                                    
+                                                    <input type="text" id="TextInput" class="form-control" placeholder="Ingre la Actividad" required/>
                                                 </div>
                                             </div>
                                             <div class="row mb-5">
@@ -59,9 +56,8 @@ function RegistroEstudiante () {
                 </div>
              
             </div>
-          
         </React.Fragment>
-    );
+     );
 };
 
-export default RegistroEstudiante;
+export default FormsTipoActividad;
