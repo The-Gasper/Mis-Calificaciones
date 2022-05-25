@@ -20,13 +20,7 @@ function App() {
 <div className="App">   
 
 <Login/>
-<ListViewAnioLectivo/>
-<ListViewActividad/>
-<ListViewAsignatura/>
-<ListViewCalificacion/>
-<ListViewEstudiante/>
-<ListViewDocente/>
-<ListViewCuso/>
+
 
 </div>
   );
