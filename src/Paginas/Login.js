@@ -79,7 +79,7 @@ function Loguin (){
                                                 name="usuario" 
                                                 placeholder="Ingresar Usuario" 
                                                 type="text" 
-                                                aria-label="email adress" 
+                                                aria-label="Usuario" 
                                                 />
                                         </div>
                                         {touched.usuario && errors.usuario && <div className="text-danger" > {errors.usuario}</div> }

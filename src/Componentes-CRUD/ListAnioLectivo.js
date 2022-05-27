@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-
-import RegistroAnioLectivo from'./FormsAnioLectivo';
+import {FormsAnioLectivo, UpdateAnioLectivo, DeleteAnioLectivo} from'./FormsAnioLectivo';
 
 function ListViewAnioLectivo (props){
+
+
+    const setInput = useState('');
+
+    const agregarInput = valor => {
+        setInput( valor);
+      };
+
+    
     return(
 <React.Fragment>
 <div class="section bg-primary text-dark section-lg">
@@ -14,7 +22,9 @@ function ListViewAnioLectivo (props){
                     <div class="text-center">
                         <span class="h4">Lista de Años Lectivos</span>
                     </div>
-                    <RegistroAnioLectivo/>
+
+                    <FormsAnioLectivo agregarInput={ agregarInput }>Agregar</FormsAnioLectivo>
+
                     <div class="table-responsive-sm shadow-soft shadow-inset rounded">
                         <table class="table table-hover shadow-inset rounded">
                         <thead>
@@ -27,21 +37,14 @@ function ListViewAnioLectivo (props){
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" id="firstyear2" rowspan="2">1</th>
+                                <th scope="row" id="id" rowspan="2">1</th>
                                 <td headers="firstyear2 Bolter2 males2"> 2022 - 2022</td>
                                 <td headers="firstyear2 Bolter2 females2">Activo</td>
-                                <td headers="firstyear2 Bolter2 females2">
-                                    <div class=" components-section">
-                                                <button class="btn btn-primary text-blue"  type="button">
-                                                    Modificar
-                                                </button>
-                                                <button class="btn btn-primary text-warning" type="button">
-                                                    Inactivar
-                                                </button>
-                                                <button class="btn btn-primary text-danger" type="button">
-                                                    Eliminar
-                                                </button> 
-                                    </div>
+                                <td headers="firstyear2 Bolter2 females2">                
+                                    
+                                    <UpdateAnioLectivo agregarInput={ agregarInput }>Modificar</UpdateAnioLectivo>
+
+                                    <DeleteAnioLectivo agregarInput={ agregarInput }>Eliminar</DeleteAnioLectivo>
                                 </td>
                             </tr>
                             
