@@ -135,6 +135,7 @@ export function FormsAnioLectivo (props) {
                                                 {touched.fecha_ini && errors.fecha_ini && <div className="text-danger" > {errors.fecha_ini}</div> }
                                             </div>
                                         </div>
+                                        
                                         <div className="col">
                                             <div className="form-group">
                                             <label className="h6" for="fecha_fin">Fecha de Finalización</label>
@@ -160,7 +161,7 @@ export function FormsAnioLectivo (props) {
                                             <div className="mb-3">
                                                 <span className="h6 font-weight-bold">Estado</span>
                                             </div>
-                                            <div className=" form-check square-check">
+                                            <div className=" form-check square-check col-4">
                                             <Field 
                                             className="form-check-input" 
                                             type="checkbox" 
@@ -204,20 +205,17 @@ export function FormsAnioLectivo (props) {
 
     return(
 <React.Fragment>
-
-        <div className="col-md-4">   
-   
-        <botton 
-        type="button" 
-        className={`btn btn-primary text-${color}`.trimEnd()}  
-        data-toggle="modal" 
-        data-target="#modal-update-Anio-Lectivo"
-        >
-        <span class="mr-4"><span className={`fas ${icon}`}></span></span>
-        {props.children}
         
-        </botton>
-                
+
+
+        <button 
+            type="button" 
+            className={`btn btn-primary text-${color}`.trimEnd()}  
+            data-toggle="modal" 
+            data-target="#modal-update-Anio-Lectivo">
+            <span class="mr-1"><span className={`fas ${icon}`}></span></span>
+            {props.children}
+        </button>
         
         <div className="modal fade" id="modal-update-Anio-Lectivo" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered" role="document">
@@ -353,7 +351,6 @@ export function FormsAnioLectivo (props) {
             </div>
         </div>
      
-    </div>
   
 </React.Fragment>
     );
@@ -376,22 +373,25 @@ export function DeleteAnioLectivo (props) {
     return(
 <React.Fragment>
 
-    <div class="row mt-4">
-            <div class="col-md-4">
-                <button 
-                 type="button" 
-                 className={`btn btn-primary text-${color}`.trimEnd()}  
-                 data-toggle="modal" 
-                 data-target="#modal-default">
-                 <span class="mr-4"><span className={`fas ${icon}`}></span></span>
-                 {props.children}
-                 </button>
-                 
+    
+
+                
+                            <button 
+                            type="button" 
+                            className={`btn btn-primary text-${color}`.trimEnd()}  
+                            data-toggle="modal" 
+                            data-target="#modal-default">
+                            <span class="mr-1"><span className={`fas ${icon}`}></span></span>
+                            {props.children}
+                            </button>
+
+                           
+ 
                 <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h2 class="h6 modal-title mb-0" id="modal-title-default">Terms of Service</h2>
+                                <h2 class="h6 modal-title mb-0" id="modal-title-default">Eliminar</h2>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>
@@ -407,8 +407,8 @@ export function DeleteAnioLectivo (props) {
                         </div>
                     </div>
                 </div>
-            </div>
-    </div>
+
+    
   
 </React.Fragment>
     );

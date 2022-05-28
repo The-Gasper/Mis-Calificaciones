@@ -1,25 +1,49 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "background-color": "#e6e7ee",
+  "categories": ["education", "navigation"],
+  "description": "Mis Calificaciones",
+  "dir": "ltr",
+  "display_override": ["standalone", "fullscreen"],
+  "display": "standalone",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
+      "src": "./Logo/favicon-16x16.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./Logo/favicon-32x32.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./Logo/Logo40.png",
+      "type": "image/png",
+      "sizes": "40x40"
+    },
+    {
+      "src": "./Logo/mstile-150x150.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./Logo/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./Logo/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "lang": "es-ES",
+  "name": "Mis Calificaciones",
+  "orientation": "portrait",
+  "prefer_related_application": false,
+  "scope": "/",
+  "short_name": "M.C.",
+  "start_url": "/",
+  "theme_color": "#e6e7ee"
+
 }
